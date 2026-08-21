@@ -1,4 +1,11 @@
 import React from 'react';
+import { destinationsData } from '../../../data/destinations';
+
+export function generateStaticParams() {
+  return destinationsData.map((dest) => ({
+    slug: dest.href.split('/').pop(),
+  }));
+}
 
 export default function DestinationDetailPage({ params }) {
   // Access the dynamic slug using React.use() if needed, but since it's a simple placeholder we'll just show it.
