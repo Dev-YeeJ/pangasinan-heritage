@@ -56,7 +56,7 @@ export default function HeroSection() {
         <motion.div variants={itemVariants}>
           <Typography variant="display" className="text-white">
             Discover the Heart of<br/>
-            <span className="text-tertiary-fixed-dim">Pangasinan's Heritage</span>
+            <span className="text-tertiary-fixed-dim">Pangasinan&apos;s Heritage</span>
           </Typography>
         </motion.div>
         
