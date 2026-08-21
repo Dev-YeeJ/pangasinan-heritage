@@ -4,7 +4,7 @@
 
 **Student Name:** Jaime Yee  
 **Selected Framework:** Next.js  
-**Live Website:** [Your GitHub Pages URL Here]  
+**Live Website:** https://Dev-YeeJ.github.io/pangasinan-heritage/
 
 ## Description
 This project is a digital initiative to promote cultural awareness and tourism for the province of Pangasinan's most iconic heritage sites. It utilizes a modular component library built with Atomic Design principles.
