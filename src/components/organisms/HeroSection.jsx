@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import SearchForm from '../molecules/SearchForm';
 import Typography from '../atoms/Typography';
 import Icon from '../atoms/Icon';
+import Image from '../atoms/Image';
 
 export default function HeroSection() {
   const containerVariants = {
@@ -34,9 +35,14 @@ export default function HeroSection() {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 10, ease: "linear" }}
-          className="bg-cover bg-center w-full h-full origin-center" 
-          style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcq4-UBsm7YKTaC-vsjfSBdPMNYnRQVxYBzJzd8J3VnhWJ7YJQdp4dP7UuhrpwFJABzuEgy2RkcGB8a2KSkRTpbFkak8OwrzZXfJ9sTucboFGTkugYELFIedDCVgpiEKr-VE9XMjY5Eo-6zmHyPOGzSo9-1Ivok3NTPdE1MyTlY1eOjW73AanEXgZ22_HO2W2ENvdG_xqxwzcplB0RlGf0flj5xEATumucWLhkCwRfVQTnf-eeILZV')" }}
-        ></motion.div>
+          className="w-full h-full origin-center relative" 
+        >
+          <Image 
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcq4-UBsm7YKTaC-vsjfSBdPMNYnRQVxYBzJzd8J3VnhWJ7YJQdp4dP7UuhrpwFJABzuEgy2RkcGB8a2KSkRTpbFkak8OwrzZXfJ9sTucboFGTkugYELFIedDCVgpiEKr-VE9XMjY5Eo-6zmHyPOGzSo9-1Ivok3NTPdE1MyTlY1eOjW73AanEXgZ22_HO2W2ENvdG_xqxwzcplB0RlGf0flj5xEATumucWLhkCwRfVQTnf-eeILZV"
+            alt="Pangasinan Heritage Hero"
+            priority={true}
+          />
+        </motion.div>
         <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/20 to-surface/90"></div>
       </div>
       
