@@ -2,9 +2,16 @@ import React from 'react';
 import NextImage from 'next/image';
 
 export default function Image({ src, alt, className = '', fill = true, ...props }) {
+  // Ensure basePath is prepended for local images in static export
+  const basePath = '/pangasinan-heritage';
+  const isExternal = typeof src === 'string' && src.startsWith('http');
+  const imageSrc = (typeof src === 'string' && src.startsWith('/') && !src.startsWith(basePath)) 
+    ? `${basePath}${src}` 
+    : src;
+
   return (
     <NextImage
-      src={src}
+      src={imageSrc}
       alt={alt}
       className={`object-cover ${className}`}
       fill={fill}
